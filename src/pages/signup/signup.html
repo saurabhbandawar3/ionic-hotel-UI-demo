@@ -1,0 +1,41 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu">
+      </ion-icon>
+    </button>
+    <ion-title>signup</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>Sign Up</ion-card-header>
+    <ion-item>
+      <ion-label floating color="primary" >Full Name</ion-label>
+      <ion-input type = "text" [(ngModel)]="fname"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating color="primary">Email</ion-label>
+      <ion-input type = "email"[(ngModel)]="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating color="primary">Password</ion-label>
+      <ion-input type = "password" [(ngModel)]="pswd"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating color="primary">Address</ion-label>
+      <ion-input type = "text" [(ngModel)]="address"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating color="primary">Mobile Number</ion-label>
+      <ion-input type = "tel" [(ngModel)]="mobile"></ion-input>
+    </ion-item>
+    <button ion-button  color="light" class="btn-signup"  (click)="signup()">Submit </button>
+    <p>OR</p>
+    <button ion-button  color="light" class="btn-signIn" (click)="signin()" >Already have an acount!!SignIn here.</button>
+  </ion-card>
+</ion-content>

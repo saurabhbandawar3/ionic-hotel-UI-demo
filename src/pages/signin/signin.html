@@ -1,0 +1,38 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu">
+      </ion-icon>
+    </button>
+    <ion-title>signin</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-card>
+    <ion-card-header>Sign In</ion-card-header>
+    <ion-item>
+      <ion-label floating color="primary" >Email/UserName</ion-label>
+      <ion-input type = "text" [(ngModel)]="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating color="primary">Password</ion-label>
+      <ion-input type = "password"></ion-input>
+    </ion-item>
+    <button ion-button color="light" class="btn-sigin">Submit </button>
+    <p>OR</p>
+    <button ion-button color="#8b9dc3" class="facebook">
+      <ion-icon name="logo-facebook"></ion-icon>
+      Sign In With facebook
+    </button>
+    <p>OR</p>
+    <button ion-button color="light" class="signUp" (click)="gotoSignup()">Don't have an acount.SignIn here.</button>
+
+    <b><p class="para">Welcome {{email}}</p></b>
+  </ion-card>
+
+</ion-content>

@@ -1,0 +1,71 @@
+page-home {
+  .container{
+    background: linear-gradient(to bottom , #4483f2,#8f8f8f);
+    display: flex;
+    flex-direction: column;
+  }
+  .scroll-content {
+    justify-content: center;
+    display:flex;
+  }
+  .main{
+    display: flex;
+    flex-direction:column ;
+    width:26.5em;
+    height: 100em;
+    justify-content: center;
+  }
+  ion-slides {
+    width: 300px;
+    height: 330px;
+  }
+  .chat,.southIndian,.northIndian{
+    width: 300px;
+    height: 350px;
+    margin-left: 2.2em;
+  }
+  ion-card.card{
+    background: rgba(0,0,0,0.7);
+  }
+  ion-label{
+    color: white;
+  }
+  .wada{
+    width: 500px;
+  }
+  //.signin{
+  //  margin-left:1em ;
+  //}
+  //.signup{
+  //  margin-left:0em;
+  //}
+  //.watchVideo{
+  //  margin-left: 1em;
+  //}
+  .action-sheet{
+    width: 300px;
+    height: 200px;
+    margin-left: 2.2em;
+    margin-top: 2em;
+    .header{
+      color: white;
+    }
+  }
+  .nav-button{
+    width: 305px;
+    margin-left: 2.2em;
+  }
+  .modal-view{
+    width: 300px;
+    height: 100px;
+    margin-left: 2.2em;
+  }
+  .item{
+    background: transparent;
+    .text-input{
+      color: white;
+    }
+  }
+
+}
+

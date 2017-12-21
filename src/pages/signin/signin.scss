@@ -1,0 +1,57 @@
+page-signin {
+  .heading{
+    color: white;
+  }
+  ion-content{
+    text-align: center;
+    background: linear-gradient(to bottom , #4483f2,#000000);
+  }
+  .scroll-content{
+    justify-content: center;
+    display: flex;
+  }
+  ion-card.card{
+    background: rgba(0,0,0,0.9);
+    width:30em;
+    height: 30em;
+    margin-top: 7.5em;
+  }
+  ion-card-header.card-header{
+    color: white;
+  }
+  .btn-sigin{
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 1em;
+    border: 1px solid white;
+    text-align: center;
+    width: 300px;
+  }
+
+  .btn-sigin:hover{
+    color: black;
+  }
+  .facebook{
+    width: 300px;
+  }
+  .signUp{
+    width: 300px;
+  }
+  .footer{
+    text-align: center;
+    color: white;
+  }
+  .item {
+    margin-bottom: 10px;
+    background: rgba(0,0,0,0.5);
+    border: medium none;
+    .text-input{
+      color: white;
+    }
+  }
+  .para{
+    color: white;
+    font-size: 18px;
+  }
+
+}

@@ -1,0 +1,47 @@
+page-signup {
+  .heading{
+    color: white;
+  }
+  ion-content{
+    text-align: center;
+    background: linear-gradient(to bottom , #4483f2,#000000);
+  }
+  .scroll-content{
+    justify-content: center;
+    display: flex;
+  }
+  ion-card.card{
+    background: rgba(0,0,0,0.9);
+    width:30em;
+    height: 48em;
+  }
+  ion-card-header.card-header{
+    color: white;
+  }
+  .btn-signup{
+    width: 200px;
+  }
+  .btn-signIn{
+    background: rgba(0,0,0,0.9);
+    color: white;
+    border: solid white;
+  }
+  .btn-signIn:hover{
+    color: black;
+  }
+  .footer{
+    text-align: center;
+    color: white;
+  }
+  .item {
+    background: transparent;
+    border: medium none;
+    .text-input{
+      color: white;
+    }
+    input-label
+    {
+      color: white;
+    }
+  }
+}

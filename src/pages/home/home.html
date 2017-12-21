@@ -1,0 +1,98 @@
+
+<ion-header>
+  <ion-navbar>
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu">
+      </ion-icon>
+    </button>
+
+    <ion-title>
+      Indian Classic Cafe
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="container">
+  <ion-card class="main">
+
+    <ion-card class="action-sheet" (swipe)="showactionsheet()">
+      <!--<ion-card-header class="header-card">-->
+        <!--Swipe card-->
+      <!--</ion-card-header>-->
+      <img src="../assets/imgs/card.jpg">
+    </ion-card>
+    <ion-card class="modal-view">
+      <ion-item>
+      <ion-input type="text" [(ngModel)]="name" placeholder="Enter Name"></ion-input>
+      </ion-item>
+      <button ion-button full color="light" (click)="showModal()" > View On Modal Page</button>
+    </ion-card>
+    <ion-card class="chat">
+      <ion-slides effect initialSlide=0 pager autoplay>
+        <ion-slide>
+          <img src="../assets/imgs/logo1.png" class="logo1"/>
+        </ion-slide>
+        <ion-slide>
+          <img src="../assets/imgs/paniPuri.jpg">
+          <ion-label padding>PANI PURI</ion-label>
+        </ion-slide>
+        <ion-slide>
+          <img src="../assets/imgs/sevPuri.jpg">
+          <ion-label padding>SEV PURI</ion-label>
+        </ion-slide>
+        <ion-slide>
+          <img src="../assets/imgs/dahiPuri.jpg">
+          <ion-label padding>DAHI PURI</ion-label>
+        </ion-slide>
+      </ion-slides>
+  </ion-card>
+
+   <ion-card class="northIndian">
+    <ion-slides effect="" initialSlide=0 pager>
+      <ion-slide>
+        <img src="../assets/imgs/NI.png" cass="logo3"/>
+      </ion-slide>
+      <ion-slide>
+        <img src="../assets/imgs/thali.jpg">
+        <ion-label padding>THALI</ion-label>
+      </ion-slide>
+      <ion-slide>
+        <img src="../assets/imgs/dal.png">
+        <ion-label padding>DAL MAKHANI</ion-label>
+      </ion-slide>
+      <ion-slide>
+        <img src="../assets/imgs/paneer.jpg">
+        <ion-label padding>BUTTER PANEER</ion-label>
+      </ion-slide>
+    </ion-slides>
+   </ion-card>
+
+    <ion-card class="southIndian">
+      <ion-slides effect="" initialSlide=0 pager>
+        <ion-slide>
+          <img src="../assets/imgs/SI.jpg" cass="logo2" height="4em"/>
+        </ion-slide>
+        <ion-slide>
+          <img src="../assets/imgs/dosa.jpg">
+          <ion-label padding>DOSA</ion-label>
+        </ion-slide>
+        <ion-slide>
+          <img src="../assets/imgs/wada.jpg" class="wada">
+          <ion-label padding>MEDU WADA</ion-label>
+        </ion-slide>
+        <ion-slide>
+          <img src="../assets/imgs/buttermilk-dosa_759.jpg">
+          <ion-label padding>SPONGE DOSA</ion-label>
+        </ion-slide>
+      </ion-slides>
+    </ion-card>
+
+    <ion-card class="nav-button">
+      <button ion-button class="signin" color="dark" (click)="signIn()">SignIn</button>
+      <button ion-button class="watchVideo" color="dark" (click)="watchVid()" >WatchVideo</button>
+      <button ion-button class="signup" color="dark" (click)="signUp()">SignUp</button>
+    </ion-card>
+
+  </ion-card>
+</ion-content>
+
